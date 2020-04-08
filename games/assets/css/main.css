@@ -1941,7 +1941,7 @@ a {
 }
 	@font-face {
 		font-family: myfont;
-		src: url(../fonts/myfont.ttf);
+		src: url(../fonts/Montserrat-Regular.ttf);
 	  }
 
 
@@ -1949,7 +1949,7 @@ a {
 		position: absolute;
 		color: white;
 		font-family: myfont;
-		font-size: 5vmin;
+		font-size: 4.5vmin;
 		transform: translate(-50%, -50%);
 		left: 50%;
 		top: 50%;

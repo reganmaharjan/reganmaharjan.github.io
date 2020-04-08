@@ -353,14 +353,14 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				$('.card').css('opacity','0');
+				$('.card').css({'opacity':'0','pointer-events':'none'});
 				$('.item').mouseenter(function(){
 					$(this).children('.card').animate({'opacity':'1'},200);
-					$(this).children('.default-info').animate({'opacity':'0'},200);
+					$(this).children('.default-info').animate({'opacity':'0'},200).css({'pointer-events':'auto'});
 				});
 				$('.item').mouseleave(function(){
 					$(this).children('.card').animate({'opacity':'0'},200);
-					$(this).children('.default-info').animate({'opacity':'1'},200);
+					$(this).children('.default-info').animate({'opacity':'1'},200).css({'pointer-events':'none'});
 				});
 			</script>
 

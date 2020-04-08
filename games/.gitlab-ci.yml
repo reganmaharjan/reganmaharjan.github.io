@@ -1,0 +1,13 @@
+stages:
+    - update-games
+
+update:
+    stage: update-games
+    script:
+        - echo "hello-build"
+        - rm -rf /var/www/games/*
+        - rm -rf .git
+        - mv * /var/www/games/
+        - echo "finished updating the games..."
+        
+         
